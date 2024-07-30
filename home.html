@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VenJour Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href = "styles.css">
+</head>
+
+<style>
+  /* Home background image */
+body{
+  background-image:url("images/home_bg.png");
+  background-size:cover;
+  background-attachment:fixed;
+  }
+/* Home 1st page */
+.homepage {
+  margin-bottom: 5vw;
+}
+
+.homepage h1{
+    text-align:left;
+    margin-left: 70px;
+    color:#fff;
+    font-size:7.8vw;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow:0 0 7px white;
+    }
+    
+.homepage p{
+    text-align:left;
+    margin-left: 70px;
+    color:#ff4ff3;
+    font-size:2.5vw;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow:0 0 6px #ff4ff3;
+    }
+
+.homepage button {
+width:35%;
+height: 11%;
+font-size: 1.5vw;
+display: flex;
+justify-content: center;
+align-items: center;
+background-image: linear-gradient(to right, #832eff, #fe4ff2);
+border:0;
+border-radius:25px;
+margin-left: 70px;
+}
+.homepage button a {
+    color:white;
+    text-decoration:none;
+
+}.homepage button:hover {
+    background-color: #533984;
+}
+
+.homepage img {
+  width: 41.5vw;
+  height: 38.5vw;
+  margin-left: 60px;
+} 
+</style>
+
+<nav class="navbar navbar-expand-sm navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="home.html"><img src="images/logo1.webp"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <form class="search-container d-flex">
+            <input class="form-control" type="text" placeholder="Search">
+            <button type="button"><i class="fa fa-search"></i></button>
+          </form>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="services.html" role="button" data-bs-toggle="dropdown-menu">Services</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="home.html">Return to Homepage</a></li>
+              <li><a class="dropdown-item" href="services.html" target="_blank">Features</a></li>
+              <li><a class="dropdown-item" href="personal.html" target="_blank">Personal Account</a></li>
+              <li><a class="dropdown-item" href="business.html" target="_blank">Business Account</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="conversion.html">Conversion</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Log In</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="signup.html">Sign Up</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+<body>
+
+  <div class="container-fluid mt-2">
+    <div class="row">
+      <div class="homepage col-sm-6 ">
+        <h1><b>HERE TO CONNECT</b></h1>
+        <p><b>A COMPREHENSIVE MULTI-<br>CURRENCY E-WALLET</b></p>
+        <br>
+        <button type="button"><a name="connect" href="#"><b>CONNECT HERE</b></a></button>
+      </div>
+      <div class="homepage col-sm-6 ">
+        <img src="images/home_sticker.webp" alt="Home Sticker">
+      </div>
+    </div>
+
+</body>
+</html>

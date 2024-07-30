@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* Log In Page */
+    .card2 {
+        border-radius: 10px;
+        padding: 40px 40px;
+        box-sizing: border-box;
+        cursor: pointer;
+        margin: 30px auto;
+        background-position: center;
+        background-size: cover;
+        justify-content: center;
+        background: rgba(0, 0, 0, 0.3);
+        max-width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: inline-start;
+        
+    }
+
+    .card2 h3 {
+        color: #ff4ff3;
+        text-shadow: 0 0 6px #ff4ff3;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 3vw;
+        text-align: left;
+        margin-left: 4vw;
+        
+    }
+
+    .card2 ::placeholder {
+        color: #ff4ff3;
+        text-shadow: 0 0 6px #ff4ff3;
+    }
+
+    .card2 input[type=text],
+    .card2 input[type=password] {
+        width: 80%;
+        padding: 12px 2px;
+        margin: 10px 0;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 3px solid #ff4ff3;
+        background-color: transparent;
+    }
+
+    .card2 i {
+        font-size: 1rem;
+        float:inline-end;
+        margin-right: 4vw;
+    }
+
+label {
+  color:#ff4ff3;
+  text-shadow:0 0 6px #ff4ff3;
+  margin-left:50px;
+}
+
+    .button1,
+    .button2 {
+        width: 42%;
+        height: 3rem;
+        font-size: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ff4ff3;
+        border: 0;
+        border-radius: 25px;
+        margin: 1rem 0;
+        color: white;
+        text-decoration: none;
+        float:inline-start;
+        margin-left: 3vw;
+    }
+
+    .button1 a, .button2 a {
+      text-decoration: none;
+      color:#fff;
+    }
+
+    .button1:hover,
+    .button2:hover {
+        background-color: #533984;
+    }
+
+    h1 {
+        margin-top: 5vw;
+        margin-right: 3vw;
+        text-align: right;
+        color: #fff;
+        font-size: 4.5vw;
+        font-family: Arial, Helvetica, sans-serif;
+        text-shadow: 0 0 6px white;
+    }
+
+    .content img {
+        width: 100%;
+        max-width: 25vw;
+        height: auto;
+        margin-right: 3vw;
+        float:right;
+    }
+
+    body {
+        background-image: url("images/sign_bg.png");
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    @media (max-width: 800px) {
+        .card2 h3 {
+            font-size: 5vw;
+        }
+
+        .button1,
+        .button2 {
+            width: 90%;
+            height: 3rem;
+            font-size: 1.2rem;
+        }
+
+        h1 {
+            font-size: 6vw;
+            text-align: center;
+        }
+
+        .content img {
+            margin-left: 0;
+            max-width: 50vw;
+            margin: 0 180px;
+            display: block;
+        }
+    }
+</style>
+
+<body>
+
+  <nav class="navbar navbar-expand-sm navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="home.html"><img src="images/logo1.webp"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <form class="search-container d-flex">
+            <input class="form-control" type="text" placeholder="Search">
+            <button type="button"><i class="fa fa-search"></i></button>
+          </form>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="services.html" role="button" data-bs-toggle="dropdown-menu">Services</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="home.html">Return to Homepage</a></li>
+              <li><a class="dropdown-item" href="services.html" target="_blank">Features</a></li>
+              <li><a class="dropdown-item" href="personal.html" target="_blank">Personal Account</a></li>
+              <li><a class="dropdown-item" href="business.html" target="_blank">Business Account</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="conversion.html">Conversion</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Log In</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="signup.html">Sign Up</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<div class="container-fluid mt-5">
+    <div class="row">
+        <div class="content col-lg-7 col-md-6 col-sm-12">
+            <div class="card card2">
+                <h3><b>LOG IN</b></h3>
+                <form action="/submit-form" method="post">
+                    <label for="phone_email"></label>
+                    <input name="phone_email" type="text" id="phone_email" placeholder="* PHONE OR EMAIL">
+                    <br/><br/>
+                    <label for="password"></label>
+                    <input name="password" type="password" id="password" placeholder="* PASSWORD" required>
+                    <br/><br/>
+                    <i><a href="#" name="forgot_password">Forgot password?</a></i>
+                    <div class="checkbox">
+                        <label><input type="checkbox"> Remember me</label>
+                    </div>
+                    <br/><br/>
+                    <button class="button1" type="button"><a href="payments.html" name="login"><b>LOG IN</b></a></button>
+                    <button class="button2" type="button"><a href="payments.html" name="Singpass"><b>LOG IN WITH SINGPASS</b></a></button>
+                </form>
+            </div>
+        </div>
+        <div class="content col-lg-5 col-md-6 col-sm-12">
+            <h1><b>HI, WELCOME <br/>BACK TO</b></h1>
+            <p>
+            <img src="images/logo1.webp" alt="Logo">
+        </div>
+    </div>
+</div>
+</body>
+</html>
