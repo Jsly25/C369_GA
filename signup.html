@@ -11,6 +11,12 @@
 </head>
 <style>
 /* Signup Page */
+body {
+    background-image: url("images/sign_bg.png");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 .signup {
     display:flex;
     flex: 1;
@@ -145,12 +151,6 @@ h1 {
   float:right;
 }
 
-body {
-    background-image: url("images/sign_bg.png");
-    background-size: cover;
-    background-attachment: fixed;
-}
-
 @media (max-width: 800px) {
   .card1 input[type=text],
   .card1 input[type=password],
@@ -160,9 +160,11 @@ body {
         margin: 10px 0;
         margin-left: 4vw;
     }
+
+  .button1 a, .button2 a {
+        font-size: 1.3vw;
+    }
 }
-
-
 </style>
 
 
