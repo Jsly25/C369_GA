@@ -15,10 +15,15 @@
     background-image: url("images/sign_bg.png");
     background-size: cover;
     background-attachment: fixed;
+    margin-bottom: 3vw;
+  }
+
+  .personal {
+    display: flex;
+    flex: 1;
   }
   
-
-  h1 {
+  .personal h1 {
     font-size: 4vw;
     text-align: left;
     margin-left: 8vw;
@@ -31,7 +36,8 @@
   .card1 {
     width: 39vw;
     height: 28vw;
-    display: inline-table;
+    display: flex;
+    flex: 1;
     border-radius: 80px;
     padding: 15px 25px;
     box-sizing: border-box;
@@ -42,6 +48,12 @@
     background-image: url("images/personal.png");
     margin-left: 5vw;
     margin-bottom: 5vw;
+  }
+
+  .personal_info {
+    display: flex;
+    flex: 1;
+    margin-left: 6vw;
   }
 
   .offer-container {
@@ -136,13 +148,13 @@
 </nav>
 
 <body>
-  <div class="container-fluid mt-2">
-    <div class="row">
-      <div class="col-sm-6">
-        <h1><b>PERSONAL ACCOUNT</b></h1>
+  <div class="section">
+    <div class="personal">
+      <div class="text">
+        <h1><b>PERSONAL<br>ACCOUNT</b></h1>
         <div class="card card1"></div>
       </div>
-      <div class="col-sm-6">
+      <div class="personal_info">
         <div class="offer-container">
           <h4><b>WHAT WE OFFER</b></h4>
           <div class="offer-item">SPEND MORE WITH NO HIDDEN FEES</div>
@@ -151,8 +163,8 @@
           <div class="offer-item">ENJOY SPECIAL DEALS & PROMOTIONS AS YOU TRAVEL</div>
           <div class="offer-item">SECURED WITH 24/7 AI-POWERED FRAUD DETECTION</div>
           <div class="offer-item">SECRET PHRASE RECOVERY</div>
-        </div>
         <button class="button button3"><a name="signup" href="signup.html"><b>SIGN UP NOW</b></a></button>
+      </div>
       </div>
     </div>
   </div>

@@ -17,7 +17,12 @@
     background-attachment: fixed;
   }
 
-  h1 {
+  .business_info {
+    display: flex;
+    flex: 1;
+  }
+
+  .business h1 {
     font-size: 4.2vw;
     text-align: right;
     margin-right: 7vw;
@@ -49,6 +54,7 @@
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 3vw;
     margin-left: 5vw;
+    margin-right: 5vw;
   }
 
   .offer-container h4 {
@@ -73,9 +79,9 @@
     width: 38%;
     height: 4vw;
     font-size: 1rem;
-    display: flex;
     justify-content: center;
     align-items: center;
+    display: flex;
     background-image: linear-gradient(to right, #832eff, #fe4ff2);
     border: 0;
     border-radius: 25px;
@@ -83,7 +89,6 @@
     text-decoration: none;
     text-align: center;
     margin-top: 2vw;
-    margin-left: 5vw;
   }
 
   .button3 a {
@@ -135,9 +140,9 @@
 </nav>
 
 <body>
-  <div class="container-fluid mt-2">
-    <div class="row">
-      <div class="col-sm-6">
+  <div class="section">
+    <div class="business_info">
+      <div class="text">
         <div class="offer-container">
           <h4><b>WHAT WE OFFER</b></h4>
           <div class="offer-item">TRADE WITH NO HIDDEN FEES</div>
@@ -145,10 +150,10 @@
           <div class="offer-item">MASTERCARD, VISA, UNIONPAY, APPLEPAY, GOOGLEPAY & MORE TO COME!</div>
           <div class="offer-item">SECURED WITH 24/7 AI-POWERED FRAUD DETECTION</div>
           <div class="offer-item">SECRET PHRASE RECOVERY</div>
-        </div>
         <button class="button button3"><a name="signup" href="signup.html"><b>SIGN UP NOW</b></a></button>
       </div>
-      <div class="col-sm-6">
+      </div>
+      <div class="business">
         <h1><b>BUSINESS<br>ACCOUNT</b></h1>
         <div class="card card1"></div>
       </div>

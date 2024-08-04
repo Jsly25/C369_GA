@@ -101,7 +101,6 @@ body {
     margin-top: -1.5vw;
 }
 </style>
-<body>
 
     <nav class="navbar navbar-expand-sm navbar-dark">
         <div class="container-fluid">
@@ -124,20 +123,24 @@ body {
               <li class="nav-item">
                 <a class="nav-link" href="contact.html">Contact Us</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="index.html"><i class="fa fa-user-circle"></i> Profile</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown-menu"><i class="fa fa-user-circle"></i> Profile</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="index.html">Log Out</a></li>
+                </ul>
               </li>
             </ul>
           </div>
         </div>
       </nav>
 
+<body>
 <div class="container">
     <div class="card">
         <h3>TRANSFER MONEY</h3>
-        <form action="/submit-form" method="post">
+        <form id = "transfer_form" action="/submit-form" method="post">
             <label for="amount">AMOUNT</label><br>
-            <input type="text" id="amount" name="amount" placeholder="$0.00">
+            <input type="text" id="amount" name="amount" placeholder="$0.00" required>
             <select id="currency" name="currency">
                 <option value="SGD">SGD</option>
                 <option value="MYR">MYR</option>
@@ -148,15 +151,26 @@ body {
             </select><br>
             <label for="account">ACCOUNT</label><br>
             <select id="account" name="account">
-                <option value="account1">Account 1</option>
+                <option value="account1">SGD</option>
+                <option value="account1">MYR</option>
             </select><br>
             <div class="current-rate"><i>CURRENT RATE</i><br><b>1 SGD = 3.48 MYR</b></div>
             <label for="comments">COMMENTS (OPTIONAL)</label><br>
             <textarea id="comments" name="comments" rows="2"></textarea>
-            <button class="button" type="button"><a href="payments.html" name="transfer"><b>SEND NOW</b></a></button>
+            <button class="button" type="submit"><b>SEND NOW</b></button>
         </form>
     </div>
 </div>
+
+<script>
+    document.getElementById("transfer_form").addEventListener("submit", function(event) {
+        event.preventDefault(); 
+        if (this.checkValidity()) {
+            window.location.href = "payments.html";
+        }
+    });
+    </script>
+
 </body>
 </html>
 

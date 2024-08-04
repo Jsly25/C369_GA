@@ -37,7 +37,7 @@ body {
 }
 
 .card-info img {
-    border-radius: 3.2vw;
+    border-radius: 2.8vw;
     margin-top: 2vw;
     width: 120%;
     margin-left: 3vw;
@@ -46,6 +46,7 @@ body {
 .account-balance .balance {
     text-align: right;
     margin-top: 2vw;
+    margin-right: 3vw;
     flex: 1;
 }
 
@@ -89,6 +90,11 @@ body {
 
 .header-transactions h4 {
     font-size: 1.7vw;
+}
+
+.header-transactions h4 a {
+    text-decoration: none;
+    color: #f7b8d2;
 }
 
 .recent-transactions {
@@ -208,8 +214,11 @@ body {
           <li class="nav-item">
             <a class="nav-link" href="contact.html">Contact Us</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="index.html"><i class="fa fa-user-circle"></i> Profile</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown-menu"><i class="fa fa-user-circle"></i> Profile</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="index.html">Log Out</a></li>
+            </ul>
           </li>
         </ul>
       </div>
@@ -238,12 +247,12 @@ body {
                         <button><a href="topup.html"><i class="fa fa-credit-card"></i> Top-Up</a></button>
                         <button><a href="conversion.html"><i class="fa fa-exchange"></i> Exchange</a></button>
                         <button><a href="transfer.html"><i class="fa fa-send"></i> Send Money</a></button>
-                        <button><a href="#"><i class="fa fa-plus-circle"></i> Add Shortcuts</a></button>
+                        <button><a href="history.html"><i class="fa fa-clock-o"></i> History</a></button>
                         </div>
                     </section>
                     <div class="header-transactions">
                         <h4>Recent Transactions</h4>
-                        <h4>View All</h4>
+                        <h4><a href = "history.html">View All</h4></a>
                     </div>
                     <section class="recent-transactions">
                         <div class="transaction">
@@ -306,8 +315,8 @@ body {
             <div class="col-lg-3">
                 <aside class="sidebar">
                     <div class="header">
-                        <h4>Accounts <i class="fa fa-retweet"></i></h4>
-                        <h4>View All</h4>
+                        <h4>Accounts </h4>
+                        <h4><i class="fa fa-retweet"></i></h4>
                     </div>
                     <div class="account-item">
                         <p><b>SGD</b>

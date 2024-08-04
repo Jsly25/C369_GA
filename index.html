@@ -18,13 +18,15 @@ body{
   background-attachment:fixed;
   }
 /* Home 1st page */
-.homepage {
+.section .homepage {
   margin-bottom: 5vw;
+  display: flex;
+  flex: 1;
 }
 
 .homepage h1{
     text-align:left;
-    margin-left: 70px;
+    margin-left: 6vw;
     color:#fff;
     font-size:7.8vw;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -33,7 +35,7 @@ body{
     
 .homepage p{
     text-align:left;
-    margin-left: 70px;
+    margin-left: 6vw;
     color:#ff4ff3;
     font-size:2.5vw;
     font-family: Arial, Helvetica, sans-serif;
@@ -50,7 +52,8 @@ align-items: center;
 background-image: linear-gradient(to right, #832eff, #fe4ff2);
 border:0;
 border-radius:25px;
-margin-left: 70px;
+margin-left: 6vw;
+
 }
 .homepage button a {
     color:white;
@@ -60,11 +63,14 @@ margin-left: 70px;
     background-color: #533984;
 }
 
-.homepage img {
-  width: 41.5vw;
-  height: 38.5vw;
-  margin-left: 60px;
+.image img {
+  display: flex;
+  flex: 1;
+  width: 40.8vw;
+  height: 38.3vw;
+  margin-right: 3.6vw;
 } 
+
 </style>
 
 <nav class="navbar navbar-expand-sm navbar-dark">
@@ -111,15 +117,15 @@ margin-left: 70px;
 
 <body>
 
-  <div class="container-fluid mt-2">
-    <div class="row">
-      <div class="homepage col-sm-6 ">
+  <div class="section">
+    <div class="homepage">
+      <div class="text ">
         <h1><b>HERE TO CONNECT</b></h1>
         <p><b>A COMPREHENSIVE MULTI-<br>CURRENCY E-WALLET</b></p>
         <br>
-        <button type="button"><a name="connect" href="#"><b>CONNECT HERE</b></a></button>
+        <button type="button"><a name="connect" href="signup.html"><b>CONNECT HERE</b></a></button>
       </div>
-      <div class="homepage col-sm-6 ">
+      <div class="image">
         <img src="images/home_sticker.webp" alt="Home Sticker">
       </div>
     </div>

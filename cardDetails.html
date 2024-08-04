@@ -45,6 +45,19 @@ body {
     margin-bottom: 1vw;
 }
 
+#month, #year {
+    width: 40%;
+}
+
+.details {
+    display: flex;
+    justify-content: inline-start;
+  }
+
+.date {
+    margin-right: 3vw;
+  }
+
 .card input[type=text] {
     width: 100%;
     padding: 1vw;
@@ -117,8 +130,11 @@ body {
           <li class="nav-item">
             <a class="nav-link" href="contact.html">Contact Us</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="index.html"><i class="fa fa-user-circle"></i> Profile</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown-menu"><i class="fa fa-user-circle"></i> Profile</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="index.html">Log Out</a></li>
+            </ul>
           </li>
         </ul>
       </div>
@@ -128,18 +144,36 @@ body {
 <div class="container">
     <div class="card">
         <h3>ENTER CARD DETAILS</h3>
-        <form action="/submit-form" method="post">
+        <form id="cardForm" action="/submit-form" method="post">
             <label for="cardno">CARD NUMBER</label><br>
-            <input type="text" id="cardno" name="cardno" placeholder="XXXX XXXX XXXX XXXX">
-            <label for="cardno">NAME</label><br>
-            <input type="text" id="name" name="name" placeholder="NAME ON CARD">
-            <label for="date">EXPIRY DATE</label><br>
-            <input type="text" id="date" name="date" placeholder="MTH/YR">
-            <label for="cvv">SECURITY CODE</label><br>
-            <input type="text" id="cvv" name="cvv" placeholder="CVV">
-            <button class="button" type="button"><a href="payments.html" name="topup"><b>CONTINUE</b></a></button>
+            <input type="text" id="cardno" name="cardno" placeholder="XXXX XXXX XXXX XXXX" required>
+            <label for="name">NAME</label><br>
+            <input type="text" id="name" name="name" placeholder="NAME ON CARD" required>
+            <div class="details">
+              <div class="date">
+                <label for="date">EXPIRY DATE</label><br>
+                <input type="text" id="month" name="month" placeholder="MTH" required>
+                <label for="slash">/</label>
+                <input type="text" id="year" name="year" placeholder="YR" required>
+              </div>
+              <div class="cvv">
+                <label for="cvv">SECURITY CODE</label><br>
+                <input type="text" id="cvv" name="cvv" placeholder="CVV" required>
+              </div>
+            </div>
+
+            <button class="button" type="submit"><b>CONTINUE</b></button>
         </form>
     </div>
 </div>
+
+<script>
+document.getElementById("cardForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent form submission
+    if (this.checkValidity()) {
+        window.location.href = "payments.html"; // Redirect to payments.html
+    }
+});
+</script>
 </body>
 </html>
