@@ -89,3 +89,9 @@
 .dropdown a{
   color:#dac4d0;
 }
+
+@media (max-width: 800px) {
+  .search-container {
+    justify-content: center;
+  }
+}
